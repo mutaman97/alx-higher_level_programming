@@ -7,7 +7,13 @@ class Square extends Square5 {
     if (c === undefined) {
       c = 'X';
     }
-    console.log((c.repeat(this.width) + '\n').repeat(this.height));
+    for (let i = 0; i < this.height; i++) {
+      let line = '';
+      for (let j = 0; j < this.width; j++) {
+        line += c;
+      }
+      console.log(line);
+    }
   }
 }
 
